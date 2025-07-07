@@ -1,3 +1,7 @@
+if vim.g.vscode then
+	return require("code").load()
+end
+
 if vim.loader then
 	vim.loader.enable()
 end
