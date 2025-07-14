@@ -1,3 +1,6 @@
+[user]
+    name = renatoastra
+    email = renato@duozada.com
 [core]
 	excludesfile = ~/.gitignore
 	editor = nvim
