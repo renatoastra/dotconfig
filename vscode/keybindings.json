@@ -1,0 +1,21 @@
+[
+	{
+		"key": "cmd+i",
+		"command": "composerMode.agent"
+	},
+	{
+		"key": "space w l",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+    {
+        "key": "space space",
+        "command": "workbench.action.quickOpen",
+        "when": "filesExplorerFocus && !inputFocus"
+	},
+  {
+    "key": "space s g",
+    "command": "workbench.action.findInFiles",
+    "when": "filesExplorerFocus && (editorTextFocus || !inputFocus)"
+  }
+]

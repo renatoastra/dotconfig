@@ -1,0 +1,23 @@
+# theme = "Solarized Dark - iPatched"
+shell-integration = fish
+theme = Dracula
+mouse-hide-while-typing = true
+background-opacity = 0.9
+background-blur-radius = 20
+background = #031219
+
+scrollback-limit = 1000000
+keybind = ctrl+n=new_window
+
+
+keybind = super+r=reload_config
+font-family = JetBrains Mono
+
+cursor-style = block
+cursor-style-blink = true
+
+  shell-integration = fish
+
+  macos-option-as-alt = left
+  keybind = alt+left=unbind
+  keybind = alt+right=unbind

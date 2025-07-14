@@ -1,0 +1,11 @@
+fzf
+ripgrep
+starship
+lazygit
+eza
+bat
+mise
+tmux
+gh
+zoxide
+git-delta

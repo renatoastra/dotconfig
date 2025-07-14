@@ -51,27 +51,19 @@ M.load = function()
 	keymap({ "n", "v" }, "<leader>wt", "<cmd>lua require('vscode').action('workbench.action.reopenClosedEditor')<CR>")
 
 	-- workBench split vertical
-	keymap({ "n", "v" }, "<leader>wsv", "<cmd>lua require('vscode').action('workbench.action.splitEditor')<CR>")
+	keymap({ "n", "v" }, "<leader>ws", "<cmd>lua require('vscode').action('workbench.action.splitEditor')<CR>")
 
 	-- workBench split horizontal
 	keymap({ "n", "v" }, "<leader>wsh", "<cmd>lua require('vscode').action('workbench.action.splitEditor')<CR>")
 
 	-- workBench Focus left editor
-	keymap("n", "<C-h>", "<cmd>lua require('vscode').action('workbench.action.focusLeftGroup')<CR>", opts)
-	keymap("n", "<C-l>", "<cmd>lua require('vscode').action('workbench.action.focusRightGroup')<CR>", opts)
-	keymap("n", "<C-k>", "<cmd>lua require('vscode').action('workbench.action.focusAboveGroup')<CR>", opts)
-	keymap("n", "<C-j>", "<cmd>lua require('vscode').action('workbench.action.focusBelowGroup')<CR>", opts)
-
-	keymap(
-		{ "n", "v" },
-		"<leader>w",
-		"<cmd>lua require('vscode').action('workbench.action.focusActiveEditorGroup')<CR>",
-		opts
-	)
+	keymap("n", "<leader>wh", "<cmd>lua require('vscode').action('workbench.action.focusLeftGroup')<CR>", opts)
+	keymap("n", "<leader>wl", "<cmd>lua require('vscode').action('workbench.action.focusActiveEditorGroup')<CR>", opts)
+	keymap("n", "<leader>wk", "<cmd>lua require('vscode').action('workbench.action.focusAboveGroup')<CR>", opts)
+	keymap("n", "<leader>wj", "<cmd>lua require('vscode').action('workbench.action.focusBelowGroup')<CR>", opts)
 
 	--workBench joinAll Groups
 	keymap({ "n", "v" }, "<leader>wj", "<cmd>lua require('vscode').action('workbench.action.joinAllGroups')<CR>")
-
 	-- quick open
 	keymap({ "n", "v" }, "<leader><Space>", "<cmd>lua require('vscode').action('workbench.action.quickOpen')<CR>", opts)
 	-- call vscode commands from neovim
